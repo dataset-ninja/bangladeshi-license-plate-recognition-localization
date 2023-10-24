@@ -29,7 +29,7 @@ ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ObjectDetection()]
 
 RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
-    RELEASE_YEAR: int = None
+    RELEASE_YEAR: int = 2022
 
 HOMEPAGE_URL: str = "https://www.kaggle.com/datasets/syednahinhossain/bangladeshi-license-plate-recognition-dataset/"
 # e.g. "https://some.com/dataset/homepage"
