@@ -105,15 +105,16 @@ def convert_and_upload_supervisely_project(
             label = sly.Label(rect, obj_class)
             labels.append(label)
 
-        return sly.Annotation(img_size=(img_height, img_wight), labels=labels, img_tags=[tag])
+        return sly.Annotation(img_size=(img_height, img_wight), labels=labels)
 
     obj_class = sly.ObjClass("license plate", sly.Rectangle)
     project = api.project.create(workspace_id, project_name, change_name_if_conflict=True)
     meta = sly.ProjectMeta(obj_classes=[obj_class])
+    api.project.update_meta(project.id, meta.to_json())
 
-    images_pathes_train = [os.path.join(path_train,file) for file in os.listdir(path_train)]
-    images_pathes_val = [os.path.join(path_val,file) for file in os.listdir(path_val)]
-    images_pathes_test = [os.path.join(path_test,file) for file in os.listdir(path_test)]
+    images_pathes_train = [os.path.join(path_train,file) for file in os.listdir(path_train) if file.endswith(images_ext)]
+    images_pathes_val = [os.path.join(path_val,file) for file in os.listdir(path_val) if file.endswith(images_ext)]
+    images_pathes_test = [os.path.join(path_test,file) for file in os.listdir(path_test) if file.endswith(images_ext)]
 
     ds_name_to_data = {
         "train": images_pathes_train,
