@@ -1,12 +1,14 @@
-import supervisely as sly
 import os
-from dataset_tools.convert import unpack_if_archive
-import src.settings as s
-from urllib.parse import unquote, urlparse
-from supervisely.io.fs import get_file_name, get_file_name_with_ext
 import xml.etree.ElementTree as ET
+from urllib.parse import unquote, urlparse
 
+import supervisely as sly
+from dataset_tools.convert import unpack_if_archive
+from supervisely.io.fs import get_file_name, get_file_name_with_ext
 from tqdm import tqdm
+
+import src.settings as s
+
 
 def download_dataset(teamfiles_dir: str) -> str:
     """Use it for large datasets to convert them on the instance"""
@@ -70,6 +72,9 @@ def convert_and_upload_supervisely_project(
     api: sly.Api, workspace_id: int, project_name: str
 ) -> sly.ProjectInfo:
     dataset_path = "License Plate Localization"
+    path_train = os.path.join(dataset_path, "train")
+    path_val = os.path.join(dataset_path, "validation")
+    path_test = os.path.join(dataset_path, "test")
     batch_size = 30
     images_ext = ".jpg"
     ann_ext = ".xml"
@@ -104,11 +109,11 @@ def convert_and_upload_supervisely_project(
 
     obj_class = sly.ObjClass("license plate", sly.Rectangle)
     project = api.project.create(workspace_id, project_name, change_name_if_conflict=True)
-    meta = sly.ProjectMeta(obj_class=obj_class)
+    meta = sly.ProjectMeta(obj_classes=[obj_class])
 
-    images_pathes_train = os.listdir(os.path.join(dataset_path, "train"))
-    images_pathes_val = os.listdir(os.path.join(dataset_path, "validation"))
-    images_pathes_test = os.listdir(os.path.join(dataset_path, "test"))
+    images_pathes_train = [os.path.join(path_train,file) for file in os.listdir(path_train)]
+    images_pathes_val = [os.path.join(path_val,file) for file in os.listdir(path_val)]
+    images_pathes_test = [os.path.join(path_test,file) for file in os.listdir(path_test)]
 
     ds_name_to_data = {
         "train": images_pathes_train,
