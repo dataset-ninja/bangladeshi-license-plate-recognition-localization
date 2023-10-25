@@ -1,5 +1,18 @@
+Authors introduce the **Bangladeshi License Plate Recognition: License Plate Localization** dataset, a valuable resource designed for the task of license plate localization within the realm of object detection, primarily catering to the surveillance industry's requirements. This dataset encompasses 6,517 images, meticulously annotated with bounding boxes, denoting 4,795 instances of a singular class, the ubiquitous *license_plate*. Notably, within the BLPR: License Plate Localization dataset, 28% of the images, amounting to 1,795, remain unlabeled, allowing for a comprehensive spectrum of data. Furthermore, it is thoughtfully partitioned into three distinct subsets, including the *train* set with 5,687 images, the *test* set with 553 images, and the *validation* set containing 277 images. This dataset presents a valuable asset for researchers and practitioners working on the advancement of license plate recognition and localization.
 
-Sample image template:
-<img src="https://github.com/dataset-ninja/gland-segmentation/assets/78355358/f158d0dd-71d5-41a2-aba5-4a5f57d54c35" alt="image" width="800">
+## About Automatic License Plate Recognition System For Bangladeshi Vehicles Using Deep Neural Network
 
-<span style="font-size: smaller; font-style: italic;">Image description.</span>
+The Bangladeshi License Plate Recognition: License Plate Localization dataset is a part of **Automatic License Plate Recognition System For Bangladeshi Vehicles Using Deep Neural Network** work, which includes two datasets:
+
+- Bangladeshi License Plate Recognition: License Plate Localization (current)
+- Bangladeshi License Plate Recognition: Character Recognition [(available on DatasetNinja)](https://datasetninja.com/bangladeshi-license-plate-recognition-character)
+
+The authors highlight that an ALPRS (Automatic License Plate Recognition System) faces three main challenges as a whole. These are properly detecting a vehicle’s license plate, segmenting the texts in the license plate, andrecognizing the texts or characters or digits. Apart from these three challenges, another important challenge is to generate properly formatted output which is ready to use. Фгерщкы focuses on various ways of overcoming these challenges with the help of Deep Neural Networks and presents the most feasible solution for a complete ALPR system. Experimenting with different DNN models, authors have come up with the most effcient & robust solution in every stage. Authors have merged the segmentation phase with the recognition phase to make this process easy. By doing such, authors can save a lot of time and computational effort. Finally, authors have presented their custom algorithm, which is computationally effcient and generates a properly formatted output for their system.
+
+<img src="https://i.ibb.co/ZMPKRDm/Screenshot-2023-10-25-132816.png" alt="image" width="800">
+
+<span style="font-size: smaller; font-style: italic;">Workﬂow diagram of the proposed system.</span>
+
+## About Datasets:
+
+One of the main contributions of authors' work is the rich datasets for both localization and recognition of the Bangladeshi license plate. Authors' ﬁrst dataset (BLPR: License Plate Localization) contains almost 2800 images for localization. The second dataset (BLPR: Character Recognition) contains around 4000 license plate images cropped from the first dataset which are the most so far in this sector. Authors have split their datasets into 70:15:15 and 85:10:5 for training, validation, and testing purpose in license plate localization and text recognition stage respectively. Authors' datasets contain images from different cities of Bangladesh: Dhaka, Khulna, Chattogram, Jashore including different vehicle categories license plates from both private and trading vehicles. Our datasets are diverse enough and cover almost every possible condition, angle, and environment. To create this datasets more diverse authors have gathered images from different sources. From [Nooruddin et al.](https://www.researchgate.net/publication/350689395_A_Bangladeshi_License_Plate_Detection_System_Based_on_Extracted_Color_Features) authors are given their dataset of only trading vehicles. Most of the private vehicle images are used from paper Rahman et al., and the rest of them are collected by authors.
