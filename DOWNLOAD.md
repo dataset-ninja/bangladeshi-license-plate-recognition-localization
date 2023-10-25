@@ -1,6 +1,6 @@
 Dataset **BLPR: License Plate Localization** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](Set 'HIDE_DATASET=False' to generate download link)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/J/I/Q5/eCvtWqgftpMGVk1taWBGDQJ6cGHV3znF2vuJn5RVPJHZ9E5Nhjk1ZVuyFqspBgpE841rFNr6b638oBCEPFlvtIFDIhSSsBfeJkCxDkxSMreMBrL5e1vC8AIbUv1l.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
