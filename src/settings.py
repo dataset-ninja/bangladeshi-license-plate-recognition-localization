@@ -13,8 +13,8 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = "Bangladeshi License Plate Recognition Dataset: License Plate Localization"
-PROJECT_NAME_FULL: str = "Bangladeshi License Plate Recognition Dataset: License Plate Localization"
+PROJECT_NAME: str = "Bangladeshi License Plate Recognition: License Plate Localization"
+PROJECT_NAME_FULL: str = "Bangladeshi License Plate Recognition: License Plate Localization"
 HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
