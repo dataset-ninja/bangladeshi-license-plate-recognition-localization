@@ -1,6 +1,6 @@
 Dataset **Bangladeshi License Plate Recognition: License Plate Localization** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogImZzOi8vYXNzZXRzLzI4NDVfQmFuZ2xhZGVzaGkgTGljZW5zZSBQbGF0ZSBSZWNvZ25pdGlvbjogTGljZW5zZSBQbGF0ZSBMb2NhbGl6YXRpb24vYmFuZ2xhZGVzaGktbGljZW5zZS1wbGF0ZS1yZWNvZ25pdGlvbjotbGljZW5zZS1wbGF0ZS1sb2NhbGl6YXRpb24tRGF0YXNldE5pbmphLnRhciIsICJzaWciOiAiTmlFK09FTTVjR3BFNUg5VFp6QzIrZWNjeVVBL1g0WjJKUEI2Uk1nQ1c2ND0ifQ==)
+ [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogInMzOi8vc3VwZXJ2aXNlbHktZGF0YXNldHMvMjg0NV9CYW5nbGFkZXNoaSBMaWNlbnNlIFBsYXRlIFJlY29nbml0aW9uOiBMaWNlbnNlIFBsYXRlIExvY2FsaXphdGlvbi9iYW5nbGFkZXNoaS1saWNlbnNlLXBsYXRlLXJlY29nbml0aW9uOi1saWNlbnNlLXBsYXRlLWxvY2FsaXphdGlvbi1EYXRhc2V0TmluamEudGFyIiwgInNpZyI6ICJ2QlFCRkVwMy8rbTI1UG00NTBpNS91VFp5c2VHY0E0WUJETlpEcnF2cms0PSJ9?response-content-disposition=attachment%3B%20filename%3D%22bangladeshi-license-plate-recognition%3A-license-plate-localization-DatasetNinja.tar%22)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
